@@ -1,0 +1,239 @@
+{% extends 'core/base.html' %}
+{% block title %}Catalogo{% endblock %}
+{%load static %}
+
+
+{% block content %}
+
+
+    <div class="nosotros-container">
+        <div class="nosotros-row">
+            <div class="nosotros-col">
+                <h2 class="titulo">Catálogo de Productos</h2>
+                <h2 class="subtitulo"><span>Conocé nuestra amplia gama de productos.</span></h2>
+                <p class="subtitulo">
+                    Cada joya cuenta con tres meses de garantia. Descubre todas las variedades que seleccionamos para ti!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="catalogo-container">
+        <h3 class="titulo">Te presentamos nuestro Catálogo de Productos</h3>
+        <div class="catalogo-grid">
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo01.png' %}" alt="Producto 1">
+                </div>
+                <h4>Ruby</h4>
+                <p>Anillo de plata 36,bañado en oro T.12</p>
+                <p>Código: PROD001</p>
+                <p >Precio: $10050.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo02.png' %}" alt="Producto 2">
+                </div>
+                <h4>Esmeraldas </h4>
+                <p>Anillo de plata 36,bañado en oro T.12</p>
+                <p>Código: PROD002</p>
+                <p>Precio: $120500.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo03.png' %}" alt="Producto 3">
+                </div>
+                <h4>Rossma</h4>
+                <p>Anillo de plata 36,bañado en plata T.12</p>
+                <p>Código: PROD003</p>
+                <p>Precio: $9000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo04.png' %} " alt="Producto 4">
+                </div>
+                <h4>Alcantara</h4>
+                <p>Anillo de plata 36,bañado en oro T.12</p>
+                <p>Código: PROD001</p>
+                <p>Precio: $10000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo05.png' %}" alt="Producto 5">
+                </div>
+                <h4>Maltesa</h4>
+                <p>Anillo de plata 36,bañado en oro T.12</p>
+                <p>Código: PROD002</p>
+                <p>Precio: $12000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo06.png' %}" alt="Producto 6">
+                </div>
+                <h4>Brancce</h4>
+                <p>Anillo de plata 36,bañado en plata T.12</p>
+                <p>Código: PROD003</p>
+                <p>Precio: $9050.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo07.png' %}" alt="Producto 7">
+                </div>
+                <h4>Crossma ls</h4>
+                <p>Anillo de plata 36,bañado en oro T.12</p>
+                <p>Código: PROD001</p>
+                <p>Precio: $100500.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo08.png' %}" alt="Producto 8">
+                </div>
+                <h4>Across Ms</h4>
+                <p>Anillo de plata 36,bañado en plata T.12</p>
+                <p>Código: PROD002</p>
+                <p>Precio: $125000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/catalogo09.png' %}" alt="Producto 9">
+                </div>
+                <h4>Yorse </h4>
+                <p>Anillo de plata 925 bañado en oro,tamaño ajustable..</p>
+                <p>Código: PROD003</p>
+                <p>Precio: $95000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+        </div>
+
+        <h3 class="titulo">Descubri tambien nuestro Catalogo de Collares y Dijes</h3>
+        <div class="catalogo-grid">
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar01.png' %}" alt="Producto 1">
+                </div>
+                <h4>Collar Plata</h4>
+                <p>Collar de Plata.</p>
+                <p>Código: PROD021</p>
+                <p>Precio: $10000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar02.png' %}" alt="Producto 2">
+                </div>
+                <h4>Collar Oro</h4>
+                <p>Collar de Oro.</p>
+                <p>Código: PROD022</p>
+                <p>Precio: $12000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar03.png' %}" alt="Producto 3">
+                </div>
+                <h4>Collar Mixto</h4>
+                <p>Collar de Plata bañado en oro y plata.</p>
+                <p>Código: PROD023</p>
+                <p>Precio: $9000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar04.png' %}" alt="Producto 4">
+                </div>
+                <h4>Producto 4</h4>
+                <p>Cadena de Plata Fina.</p>
+                <p>Código: PROD024</p>
+                <p>Precio: $100999.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar05.png' %}" alt="Producto 5">
+                </div>
+                <h4>Cadena de Plata Intermedia</h4>
+                <p>Cadena de plata grosor intermedio.</p>
+                <p>Código: PROD025</p>
+                <p>Precio: $120120.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar06.png' %}" alt="Producto 6">
+                </div>	
+                <h4>Cadena de Plata Ultra Fina</h4>
+                <p>Cadena de plata grosor ultra fino.</p>
+                <p>Código: PROD026</p>
+                <p>Precio: $90500.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar07.png' %}" alt="Producto 7">
+                </div>
+                <h4>Dije Oro</h4>
+                <p>Dije modelo 01.</p>
+                <p>Código: PROD027</p>
+                <p>Precio: $100000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar08.png' %}" alt="Producto 8">
+                </div>
+                <h4>Dije Corazón Plata</h4>
+                <p>Dije modelo 02.</p>
+                <p>Código: PROD028</p>
+                <p>Precio: $120000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+    
+            <div class="producto">
+                <div class="imagen-ampliable">
+                    <img src="{% static  'core/img/products/collar09.png' %}" alt="Producto 9">
+                </div>
+                <h4>Dije Corazón Oro</h4>
+                <p>Dije modelo 03.</p>
+                <p>Código: PROD029</p>
+                <p>Precio: $90000.00</p>
+                <a class="boton-enlace" href="{% url 'contacto' %}">Comprar</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="separador text-center text-white">
+        <p><q>Cada producto cuenta con tres meses de garantia, consultanos a traves del formulario de contacto para cotizar joyas personalizadas, anillos de compromiso y mucho mas!.</q></p>
+    </div>
+
+    <div>
+        <h1>Conoce los comentarios de clientes satisfechos con Piedras Preciosas Joyería</h1>
+        <button id="cargarDatos">Cargar Comentarios</button>
+        <div id="datos"></div>
+    </div>
+	
+    {% endblock %}
+    

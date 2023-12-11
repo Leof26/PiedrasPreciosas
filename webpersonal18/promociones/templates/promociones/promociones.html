@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% block title %}Promociones{% endblock %}
+{%load static %}
+
+{% block content %}
+
+{{ promociones }}
+
+<div class="promociones-container">
+    <h3 class="titulo">Promociones</h3>
+    <h2 class="subtitulo"><span>¡No te pierdas nuestras increíbles promociones!</span></h2>
+
+{%for promociones in promociones %}
+
+    
+        <div class="promocion">
+            <div class="imagen-ampliable">
+                <img src="{{promociones.image.url}}" alt="Promoción 1">
+            </div>
+            <h4>{{promociones.title}}</h4>
+            <p>{{promociones.description}}</p>
+            <a class="boton-enlace" href="{% url 'contacto' %}">Mas informacion</a>
+        </div>
+        
+     
+    {% endfor %}
+   <div class="separador text-center text-white">
+        <p><q>Cada cuenta con tres meses de garantia, Brindandote siempre la mejor calidad.</q></p>
+   </div>
+
+{% endblock %}
